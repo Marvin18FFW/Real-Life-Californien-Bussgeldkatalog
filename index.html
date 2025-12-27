@@ -130,15 +130,23 @@ const DATA = {
   drogen: {
     title: "Drogendelikte",
     rows: [
-      ["BtMG §3 Abs.1","Besitz harter Drogen","Illegale Substanzen",3000,15,"-"],
-      ["BtMG §4 Abs.1","Drogenhandel","Handel mit BtM",5000,25,"-"]
+      ["StGB §2 Abs. 1", "Drogenbesitz (Eigenbedarf)", "Besitz geringer Mengen zum Eigenkonsum", 500, 0, "-"],
+      ["StGB §2 Abs. 2", "Drogenbesitz (Handelsmenge)", "Besitz großer Mengen mit Verkaufsabsicht", 5000, 20, "-"],
+      ["StGB §2 Abs. 3", "Drogenhandel", "Verkauf oder Weitergabe von Betäubungsmitteln", 7500, 30, "-"],
+      ["StGB §2 Abs. 4", "Drogenanbau/Herstellung", "Anbau von Pflanzen oder chemische Produktion", 10000, 40, "-"],
+      ["StGB §2 Abs. 5", "Führen KFZ unter Drogen", "Teilnahme am Straßenverkehr unter Drogeneinfluss", 2500, 10, "FS-Entzug"],
+      ["StGB §2 Abs. 6", "Drogenschmuggel", "Einfuhr oder Transport großer Mengen über Grenzen", 12500, 45, "-"]
     ]
   },
   waffen: {
     title: "Waffendelikte",
     rows: [
-      ["WaffG §6 Abs.1","Illegaler Waffenbesitz","Ohne Lizenz",3500,15,"-"],
-      ["WaffG §6 Abs.3","Waffenhandel","Illegaler Handel",8000,35,"-"]
+      ["StGB §5 Abs. 1", "Waffenbesitz ohne Schein", "Besitz einer Schusswaffe ohne gültige Lizenz", 5000, 15, "Einzug"],
+      ["StGB §5 Abs. 2", "Besitz illegaler Waffen", "Besitz von Kriegswaffen oder verbotenen Waffen", 10000, 30, "Einzug"],
+      ["StGB §5 Abs. 3", "Waffenhandel", "Illegaler Verkauf oder Weitergabe von Schusswaffen", 15000, 45, "Einzug"],
+      ["StGB §5 Abs. 4", "Führen einer Waffe", "Offenes Tragen einer Waffe ohne Berechtigung", 2500, 10, "Einzug"],
+      ["StGB §5 Abs. 5", "Schusswaffengebrauch", "Abfeuern einer Waffe ohne Notwehr-Grund", 7500, 20, "Einzug"],
+      ["StGB §5 Abs. 6", "Besitz von Sprengstoff", "Mitführen oder Lagern von Explosivstoffen", 20000, 50, "Einzug"]
     ]
   },
   verkehr: {
